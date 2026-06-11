@@ -1,7 +1,7 @@
 # Taller de Pruebas de Carga y Rendimiento con JMeter
 
 **Curso:** Testing y Validación de Software  
-**Programa:** Maestría en Ingeniería de Software – Universidad de La Sabana  
+**Programa:** Maestría en Arquitectura de Software – Universidad de La Sabana  
 **Basado en:** [TYVS-Taller_Pruebas_de_carga](https://github.com/CesarAVegaF312/TYVS-Taller_Pruebas_de_carga)
 
 ---
@@ -297,4 +297,4 @@ Al finalizar las pruebas, documentar en [`defectos.md`](./defectos.md) los probl
 ---
 
 © Universidad de La Sabana – Facultad de Ingeniería  
-Maestría en Ingeniería de Software – 2025
+Maestría en Arquitectura de Software – 2025

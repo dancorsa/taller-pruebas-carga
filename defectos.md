@@ -131,4 +131,4 @@ Alta (causaba errores intermitentes difíciles de diagnosticar)
 ---
 
 *Defectos documentados para la Unidad 5 – Testing y Validación de Software*  
-*Universidad de La Sabana – Maestría en Ingeniería de Software – 2026*
+*Universidad de La Sabana – Maestría en Arquitectura de Software – 2026*
