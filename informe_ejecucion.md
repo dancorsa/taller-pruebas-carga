@@ -195,13 +195,28 @@ Durante el baseline se observó que el sistema presenta una latencia muy estable
 
 ## 8. Evidencia Visual
 
-| Evidencia | Escenario | Descripción |
-|-----------|-----------|-------------|
-| `perf/results/baseline_report/index.html` | Baseline | Reporte HTML JMeter con gráficas de latencia, throughput y distribución de tiempos. p95=21ms, 0% errores. |
-| `perf/results/load_report/index.html` | Load | Reporte HTML JMeter del Load Test (generar tras completar prueba) |
+### Capturas de pantalla
 
-> **Cómo abrir los reportes:**  
-> Abre el archivo `perf/results/baseline_report/index.html` en cualquier navegador web para ver el reporte interactivo completo con gráficas de JMeter.
+| Archivo | Escenario | Métricas clave visibles |
+|---------|-----------|------------------------|
+| [`perf/results/screenshots/baseline_statistics.png`](perf/results/screenshots/baseline_statistics.png) | Baseline (10 VUs) | p95=21ms, p99=27ms, throughput=43.5 req/s, error%=0.00% |
+| [`perf/results/screenshots/baseline_response_time.png`](perf/results/screenshots/baseline_response_time.png) | Baseline (10 VUs) | Gráfica de latencia en el tiempo |
+| [`perf/results/screenshots/load_statistics.png`](perf/results/screenshots/load_statistics.png) | Load (50→100 VUs) | p95 E1=41ms, p95 E2=64ms, error HTTP=0.00% |
+| [`perf/results/screenshots/load_active_threads.png`](perf/results/screenshots/load_active_threads.png) | Load (50→100 VUs) | Gráfica de usuarios activos por etapa |
+
+> Las capturas se encuentran en `perf/results/screenshots/`. Los reportes HTML interactivos completos se generan localmente ejecutando los scripts JMX con `-e -o` y están excluidos del repositorio por tamaño.
+
+### Cómo reproducir los reportes HTML
+
+```bash
+jmeter -n -t perf/scripts/registro_personas_baseline.jmx \
+  -l perf/results/baseline_results.jtl \
+  -e -o perf/results/baseline_report/
+
+jmeter -n -t perf/scripts/registro_personas_load.jmx \
+  -l perf/results/load_results.jtl \
+  -e -o perf/results/load_report/
+```
 
 ---
 
