@@ -3,7 +3,7 @@
 **Curso:** Testing y Validación de Software  
 **Unidad:** 5 – Validación y Verificación de Resultados  
 **Herramienta:** Apache JMeter 5.4.3  
-**Estudiante:** [Tu nombre]  
+**Equipo:** Danilo Andrés Cortés Saavedra · David Ricardo Grandas Cárdenas · Edisson Steven Bustos Galeano  
 **Fecha de ejecución:** 2026-06-10  
 **Sistema bajo prueba:** API Registraduría – `POST /register` (localhost:8080)
 
